@@ -1,0 +1,1644 @@
+{
+	"info": {
+		"_postman_id": "d14d4a05-9da8-429e-b232-7064a6295245",
+		"name": "a_nabel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tasks Copy",
+			"item": [
+				{
+					"name": "count",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6IlBJQ0tFUiIsImVtYWlsIjoibW9haHNAZ21haWwuY29tIiwicGhvbmUiOiIwOTQyMTIyMTExIiwicGFydG5lciI6bnVsbCwicGljayI6eyJpZCI6MX0sImRlbGl2ZXJ5IjpudWxsLCJpYXQiOjE2MjcyODE4NzMsImV4cCI6MTYyNzI4NTQ3M30.XgcD_QW7uPZ57X1qOQxr2b18jXVP6SOHLmUH-xkbqjU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/api/tasks/count",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"tasks",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "count delivery",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Nywicm9sZSI6IkRFTElWRVJZIiwiZW1haWwiOiJtb2hzQGdtYWlsLmNvbSIsInBob25lIjoiMDk0MjExMjExMSIsInBhcnRuZXIiOm51bGwsInBpY2siOm51bGwsImRlbGl2ZXJ5Ijp7ImlkIjoxfSwiaWF0IjoxNjI3MzE3MjgyLCJleHAiOjE2MjczMjA4ODJ9.7fbPPUanGjKkuGPT3nBnlmdh1w0lW-2kJjUBZ4LxZjc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/api/tasks/count",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"tasks",
+								"count"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "count delivery",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3333/api/tasks/count",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3333",
+									"path": [
+										"api",
+										"tasks",
+										"count"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-length",
+									"value": "17"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jul 2021 17:31:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"tasks_count\": 8\n}"
+						}
+					]
+				},
+				{
+					"name": "/tasks/pending/picking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6IlBJQ0tFUiIsImVtYWlsIjoibW9haHNAZ21haWwuY29tIiwicGhvbmUiOiIwOTQyMTIyMTExIiwicGFydG5lciI6bnVsbCwicGljayI6eyJpZCI6MX0sImRlbGl2ZXJ5IjpudWxsLCJpYXQiOjE2MjcyODE4NzMsImV4cCI6MTYyNzI4NTQ3M30.XgcD_QW7uPZ57X1qOQxr2b18jXVP6SOHLmUH-xkbqjU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3333/api/tasks/pending/picking",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"tasks",
+								"pending",
+								"picking"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/tasks/pending/{type}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:3333/api/tasks/pending/picking",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3333",
+									"path": [
+										"api",
+										"tasks",
+										"pending",
+										"picking"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-length",
+									"value": "377"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jul 2021 09:03:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"status\": \"UNDER_PICKING\",\n            \"tasks_number\": 2\n        },\n        {\n            \"status\": \"UNDER_PICKING\",\n            \"tasks_number\": 3\n        },\n        {\n            \"status\": \"UNDER_PICKING\",\n            \"tasks_number\": 4\n        },\n        {\n            \"status\": \"UNDER_PICKING\",\n            \"tasks_number\": 5\n        },\n        {\n            \"status\": \"UNDER_PICKING\",\n            \"tasks_number\": 6\n        },\n        {\n            \"status\": \"UNDER_PICKING\",\n            \"tasks_number\": 7\n        },\n        {\n            \"status\": \"UNDER_PICKING\",\n            \"tasks_number\": 8\n        },\n        {\n            \"status\": \"UNDER_PICKING\",\n            \"tasks_number\": 1\n        }\n    ],\n    \"recipients\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "/tasks/pending/delivery",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Nywicm9sZSI6IkRFTElWRVJZIiwiZW1haWwiOiJtb2hzQGdtYWlsLmNvbSIsInBob25lIjoiMDk0MjExMjExMSIsInBhcnRuZXIiOm51bGwsInBpY2siOm51bGwsImRlbGl2ZXJ5Ijp7ImlkIjoxfSwiaWF0IjoxNjI3MzE3MjgyLCJleHAiOjE2MjczMjA4ODJ9.7fbPPUanGjKkuGPT3nBnlmdh1w0lW-2kJjUBZ4LxZjc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3333/api/tasks/pending/delivery",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"tasks",
+								"pending",
+								"delivery"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/tasks/pending/delivery",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:3333/api/tasks/pending/delivery",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3333",
+									"path": [
+										"api",
+										"tasks",
+										"pending",
+										"delivery"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-length",
+									"value": "33"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jul 2021 18:33:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 3,\n            \"recipient\": 1\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "/tasks/pending/pick/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6IlBJQ0tFUiIsImVtYWlsIjoibW9haHNAZ21haWwuY29tIiwicGhvbmUiOiIwOTQyMTIyMTExIiwicGFydG5lciI6bnVsbCwicGljayI6eyJpZCI6MX0sImRlbGl2ZXJ5IjpudWxsLCJpYXQiOjE2MjcyODE4NzMsImV4cCI6MTYyNzI4NTQ3M30.XgcD_QW7uPZ57X1qOQxr2b18jXVP6SOHLmUH-xkbqjU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3333/api/tasks/pending/picking/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"tasks",
+								"pending",
+								"picking",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/tasks/pending/{type}/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:3333/api/tasks/pending/picking/2",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3333",
+									"path": [
+										"api",
+										"tasks",
+										"pending",
+										"picking",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-length",
+									"value": "143"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jul 2021 12:27:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"potato\",\n    \"img_url\": null,\n    \"supplier\": {\n        \"phone\": \"218 91 9999999\",\n        \"lat\": 32.89049999597564,\n        \"lon\": 13.17168527613358,\n        \"receipt_from\": \"almadar\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/tasks/pending/delivery/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Nywicm9sZSI6IkRFTElWRVJZIiwiZW1haWwiOiJtb2hzQGdtYWlsLmNvbSIsInBob25lIjoiMDk0MjExMjExMSIsInBhcnRuZXIiOm51bGwsInBpY2siOm51bGwsImRlbGl2ZXJ5Ijp7ImlkIjoxfSwiaWF0IjoxNjI3MzE3MjgyLCJleHAiOjE2MjczMjA4ODJ9.7fbPPUanGjKkuGPT3nBnlmdh1w0lW-2kJjUBZ4LxZjc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3333/api/tasks/pending/delivery/3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"tasks",
+								"pending",
+								"delivery",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/tasks/pending/delivery/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:3333/api/tasks/pending/delivery/3",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3333",
+									"path": [
+										"api",
+										"tasks",
+										"pending",
+										"delivery",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-length",
+									"value": "196"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jul 2021 19:10:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"total_price\": 140,\n            \"recipient\": \"ali\",\n            \"lon\": 32.88805314387766,\n            \"lat\": 13.21005113832656,\n            \"phone\": null,\n            \"payment\": {\n                \"name\": \"الدفع عند التوصيل\",\n                \"take_money\": true,\n                \"img_url\": null\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "/tasks/pending/{type}/{id}/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6IlBJQ0tFUiIsImVtYWlsIjoibW9haHNAZ21haWwuY29tIiwicGhvbmUiOiIwOTQyMTIyMTExIiwicGFydG5lciI6bnVsbCwicGljayI6eyJpZCI6MX0sImRlbGl2ZXJ5IjpudWxsLCJpYXQiOjE2MjcyODE4NzMsImV4cCI6MTYyNzI4NTQ3M30.XgcD_QW7uPZ57X1qOQxr2b18jXVP6SOHLmUH-xkbqjU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\":\"CANCELED\",\n    \"note\":\"hello\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:3333/api/tasks/pending/picking/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"tasks",
+								"pending",
+								"picking",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/tasks/pending/{type}/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:3333/api/tasks/pending/picking/2",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3333",
+									"path": [
+										"api",
+										"tasks",
+										"pending",
+										"picking",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-length",
+									"value": "143"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jul 2021 12:27:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"potato\",\n    \"img_url\": null,\n    \"supplier\": {\n        \"phone\": \"218 91 9999999\",\n        \"lat\": 32.89049999597564,\n        \"lon\": 13.17168527613358,\n        \"receipt_from\": \"almadar\"\n    }\n}"
+						},
+						{
+							"name": "/tasks/pending/{type}/{id}/update",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\":\"CANCELED\",\n    \"note\":\"hello\"\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:3333/api/tasks/pending/picking/2",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3333",
+									"path": [
+										"api",
+										"tasks",
+										"pending",
+										"picking",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-length",
+									"value": "34"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jul 2021 13:42:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"updated successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/tasks/pending/delivery/{id}/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6IlBJQ0tFUiIsImVtYWlsIjoibW9haHNAZ21haWwuY29tIiwicGhvbmUiOiIwOTQyMTIyMTExIiwicGFydG5lciI6bnVsbCwicGljayI6eyJpZCI6MX0sImRlbGl2ZXJ5IjpudWxsLCJpYXQiOjE2MjcyODE4NzMsImV4cCI6MTYyNzI4NTQ3M30.XgcD_QW7uPZ57X1qOQxr2b18jXVP6SOHLmUH-xkbqjU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\":\"CANCELED\",\n    \"note\":\"hello\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:3333/api/tasks/pending/picking/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"tasks",
+								"pending",
+								"picking",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/tasks/pending/delivery/{id}/update",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\":\"CANCELED\",\n    \"note\":\"hello\"\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:3333/api/tasks/pending/delivery/3",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3333",
+									"path": [
+										"api",
+										"tasks",
+										"pending",
+										"delivery",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-length",
+									"value": "43"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jul 2021 19:58:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"info\": 8,\n    \"message\": \"updated successfully\"\n}"
+						},
+						{
+							"name": "/tasks/pending/delivery/{id}/update",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\":\"delivered\",\n    \"note\":\"hello\"\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:3333/api/tasks/pending/delivery/3",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3333",
+									"path": [
+										"api",
+										"tasks",
+										"pending",
+										"delivery",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-length",
+									"value": "43"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jul 2021 19:59:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"info\": 8,\n    \"message\": \"updated successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delivery image",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6IlBJQ0tFUiIsImVtYWlsIjoibW9haHNAZ21haWwuY29tIiwicGhvbmUiOiIwOTQyMTIyMTExIiwicGFydG5lciI6bnVsbCwicGljayI6eyJpZCI6MX0sImRlbGl2ZXJ5IjpudWxsLCJpYXQiOjE2MjcyODE4NzMsImV4cCI6MTYyNzI4NTQ3M30.XgcD_QW7uPZ57X1qOQxr2b18jXVP6SOHLmUH-xkbqjU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/mzerone/Pictures/rofi-2021-06-22-1854-00000.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:3333/api/tasks/pending/picking/2/image",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"tasks",
+								"pending",
+								"picking",
+								"2",
+								"image"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "127.0.0.1:3333/api/tasks/pending/picking/2/image",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/mzerone/Pictures/rofi-2021-06-22-1854-00000.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:3333/api/tasks/pending/picking/2/image",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3333",
+									"path": [
+										"api",
+										"tasks",
+										"pending",
+										"picking",
+										"2",
+										"image"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-length",
+									"value": "34"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jul 2021 16:17:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"updated successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "127.0.0.1:3333/api/tasks/pending/picking/2/image Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6IlBJQ0tFUiIsImVtYWlsIjoibW9haHNAZ21haWwuY29tIiwicGhvbmUiOiIwOTQyMTIyMTExIiwicGFydG5lciI6bnVsbCwicGljayI6eyJpZCI6MX0sImRlbGl2ZXJ5IjpudWxsLCJpYXQiOjE2MjcyODE4NzMsImV4cCI6MTYyNzI4NTQ3M30.XgcD_QW7uPZ57X1qOQxr2b18jXVP6SOHLmUH-xkbqjU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/mzerone/Pictures/rofi-2021-06-22-1854-00000.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:3333/api/tasks/pending/picking/2/image",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"tasks",
+								"pending",
+								"picking",
+								"2",
+								"image"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "127.0.0.1:3333/api/tasks/pending/picking/2/image",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/mzerone/Pictures/rofi-2021-06-22-1854-00000.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:3333/api/tasks/pending/picking/2/image",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3333",
+									"path": [
+										"api",
+										"tasks",
+										"pending",
+										"picking",
+										"2",
+										"image"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-length",
+									"value": "34"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jul 2021 16:17:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"updated successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "login admin Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phone\":\"0919916257\",\n    \"password\":\"mM1234@#$Q\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3333/api/user/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phone\":\"0919916257\",\n    \"password\":\"mM1234@#$Q\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/api/user/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "accept-encoding"
+						},
+						{
+							"key": "content-length",
+							"value": "416"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jul 2021 14:05:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": \"mohammedzeglam@gmail.com\",\n    \"role\": \"admin\",\n    \"username\": \"admin\",\n    \"phone\": \"0919916257\",\n    \"is_allowed\": true,\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6IkFETUlOIiwiZW1haWwiOiJtb2hhbW1lZHplZ2xhbUBnbWFpbC5jb20iLCJwaG9uZSI6IjA5MTk5MTYyNTciLCJwYXJ0bmVyIjpudWxsLCJwaWNrIjpudWxsLCJkZWxpdmVyeSI6bnVsbCwiaWF0IjoxNjI3MjIxOTE3LCJleHAiOjE2MjcyMjU1MTd9.B1RdoGRKj_tXqoOXLSCvMRkqGM_CDJikN9Ik77oqXYA\"\n}"
+				}
+			]
+		}
+	]
+}
